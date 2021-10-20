@@ -21,7 +21,7 @@ jobs:
 
   cloneRepo:
     resources:
-      instance-type: C8
+      instance-type: V100
     outputs:
       repo:
         type: volume
@@ -34,7 +34,7 @@ jobs:
 
   generateText:
     resources:
-      instance-type: C8
+      instance-type: V100
     needs:
       - cloneRepo
     inputs:
