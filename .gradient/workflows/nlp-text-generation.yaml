@@ -21,7 +21,7 @@ jobs:
 
   cloneRepo:
     resources:
-      instance-type: RTX5000
+      instance-type: P5000
     outputs:
       repo:
         type: volume
@@ -34,7 +34,7 @@ jobs:
 
   generateText:
     resources:
-      instance-type: RTX5000
+      instance-type: P5000
     needs:
       - cloneRepo
     inputs:
