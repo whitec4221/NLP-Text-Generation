@@ -21,7 +21,7 @@ jobs:
 
   cloneRepo:
     resources:
-      instance-type: V100
+      instance-type: P6000
     outputs:
       repo:
         type: volume
@@ -34,7 +34,7 @@ jobs:
 
   generateText:
     resources:
-      instance-type: V100
+      instance-type: P6000
     needs:
       - cloneRepo
     inputs:
